@@ -40,6 +40,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 .text-box {
@@ -74,7 +75,7 @@ button {
 }
 
 .small-gap {
-    height: 2%;
+    height: 3%;
     width: 100%;
 }
 
@@ -136,28 +137,28 @@ button {
 
 .bold {
     font-family: 'font-bold';
-    font-size: 10vw;
+    font-size: 9vw;
     height: 25%;
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5vw;
+    /* margin-bottom: 0.5vw; */
 }
 
 .thin {
     font-family: 'font-rg';
-    font-size: 10vw;
+    font-size: 9.5vw;
     height: 25%;
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5vw;
+    /* margin-bottom: 0.5vw; */
 
 }
 
 .thank-you {
     font-family: 'font-bold';
-    font-size: 10vw;
+    font-size: 9.5vw;
     height: 25%;
     width: 100%;
     display: flex;
