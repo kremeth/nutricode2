@@ -117,6 +117,7 @@ button {
     align-items: center;
     justify-content: center;
     font-family: 'font-rg';
+    margin-bottom: 3%;
 }
 
 .email {
