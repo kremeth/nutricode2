@@ -1,0 +1,759 @@
+@font-face {
+    font-family: "font-rg";
+    src: url("../font/OpenSauceOne-Regular.ttf");
+}
+
+<<<<<<< HEAD
+@font-face {
+    font-family: "font-bold";
+    src: url("../font/OpenSauceOne-SemiBold.ttf");
+=======
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* set the background color with some opacity */
+    padding: 10px 0px;
+    z-index: 999;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* apply a blur filter to the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+header h1 {
+    font-size: 1.5vw;
+}
+
+.button-one {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-one button {
+    font-size: 2vw;
+    padding: 10px 30%;
+    border-radius: 5px;
+    border: none;
+    font-family: "MyFont", sans-serif;
+    background-color: transparent;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); */
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 425px) {
+    .button-one button {
+        font-size: 5vw;
+    }
+}
+
+.button-one button:hover {
+    transform: scale(1.05);
+}
+
+.button-one button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    transform: rotate(45deg);
+    animation: shiny 3s linear infinite;
+}
+
+@keyframes shiny {
+    0% {
+        transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(150%, 150%);
+    }
+}
+
+.section-one {
+    background-image: url('https://storage.googleapis.com/nutricode/part1.png');
+}
+
+.section-wrapper {
+    height: 100%;
+    width: 80%;
+}
+
+.section-wrapper.two {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title.one {
+    top: 5%;
+}
+
+@media screen and (max-width) {
+    .title {
+        height: 20vh;
+    }
+}
+
+h1 {
+    font-family: "MyFont", sans-serif;
+    font-size: 4vw;
+    line-height: 1;
+    text-align: center;
+    content: "Get your own personalised daily supplements based on your blood test!";
+}
+
+@media screen and (min-width: 426px) {
+    .title h1::before {
+        content: 'Get your own personalised daily supplements based on your blood test!';
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title.one h1::before {
+        font-family: "MyFont", sans-serif;
+        content: 'Personalised daily supplements based on your blood test!';
+        font-size: 9vw;
+        top: 5vh;
+        position: relative;
+    }
+}
+
+
+.profile-pic {
+    width: 6vw;
+    aspect-ratio: 1/1;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 47vw;
+    top: 27vh;
+    background-image: url('https://storage.googleapis.com/nutricode/ben-portrait.jpg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center center;
+    border-radius: 50%;
+    background-position-x: 57%;
+    background-position-y: 40%;
+    z-index: 1;
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.gap {
+    height: 4%;
+    width: 100%;
+}
+
+.image {
+    height: 45%;
+    width: 100%;
+<<<<<<< HEAD
+    background-image: url('../img.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.big-text {
+=======
+}
+
+.profile-image {
+    position: relative;
+    top: 10vh;
+    width: 50vw;
+    height: 80%;
+    background-image: url("https://storage.googleapis.com/nutricode/example-ben.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    /* overflow: hidden; */
+}
+
+@media screen and (max-width: 425px) {
+    .profile-image {
+        aspect-ratio: 1/1;
+        height: 80%;
+        background-image: url("https://storage.googleapis.com/nutricode/example.png");
+        top: 14vh;
+        width: 60vw;
+        border-radius: 0px;
+    }
+}
+
+.title-blood-test-image {
+    width: 30%;
+    aspect-ratio: 4/3;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    background-image: url('https://storage.googleapis.com/nutricode/blood-test.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+}
+
+@media screen and (max-width: 425px) {
+    .title-blood-test-image {
+        display: none;
+    }
+}
+
+.title-daily-image {
+    width: 30%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    background-image: url('https://storage.googleapis.com/nutricode/daily.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+}
+
+@media screen and (max-width: 425px) {
+    .title-daily-image {
+        display: none;
+        width: 50%;
+        bottom: 3vh;
+    }
+}
+
+.section-two {
+    background-image: url("https://storage.googleapis.com/nutricode/part3.png");
+}
+
+@media screen and (min-width: 426px) {
+    .title.two h1::before {
+        content: 'How it works';
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title.two h1::before {
+        font-family: "MyFont", sans-serif;
+        content: 'How it works';
+        font-size: 9vw;
+    }
+}
+
+.line-wrapper {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+
+@media screen and (max-width: 426px) {
+    .line {
+        width: 30%;
+    }
+}
+
+.step {
+    height: 10%;
+    width: 100%;
+}
+
+.step-title-wrapper {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-title-wrapper-two {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-title {
+    height: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 426px) {
+    .step-title {
+        width: auto;
+    }
+}
+
+.step-title h1 {
+    font-size: 1.8vw;
+}
+
+@media screen and (max-width: 426px) {
+    .step-title h1 {
+        font-size: 7vw;
+    }
+}
+
+.step-text-wrapper {
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+<<<<<<< HEAD
+.text-box {
+=======
+@media screen and (max-width: 426px) {
+    .step-text {
+        height: 70%;
+        width: 100%;
+    }
+}
+
+.step-text {
+    height: 100%;
+    aspect-ratio: 7/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 426px) {
+    .step-text p {
+        font-size: 3.5vw;
+    }
+}
+
+.slides>div {
+    flex: 0 0 100%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+    .slider {
+        width: 200%;
+    }
+}
+
+.slides {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    bottom: 5;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-image-wrapper {
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+}
+
+@media screen and (min-width: 426px) {
+    .how-image-wrapper {
+        height: 50%;
+    }
+}
+
+.how-image {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    margin: 5%;
+    border-radius: 10%;
+}
+
+
+.how-image.first-how {
+    background-image: url('https://storage.googleapis.com/nutricode/img1.png');
+    height: 90%;
+    aspect-ratio: 1/1;
+    margin-bottom: 13%;
+}
+
+.how-image.second-how {
+    background-image: url('https://storage.googleapis.com/nutricode/img.jpg');
+    height: 90%;
+    aspect-ratio: 1/1;
+    margin-bottom: 13%;
+}
+
+.how-image.third-how {
+    background-image: url('https://storage.googleapis.com/nutricode/img3.jpg');
+    height: 90%;
+    aspect-ratio: 1/1;
+    margin-bottom: 13%;
+}
+
+.how-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.step-number {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-number h1 {
+    font-size: 1.2vw;
+}
+
+@media screen and (max-width: 426px) {
+    .step-number h1 {
+        font-size: 4vw;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: absolute;
+    right: 95%;
+}
+
+.dots-wrapper {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+}
+
+@media screen and (max-width: 426px) {
+    .dots-wrapper {
+        bottom: 5%;
+    }
+}
+
+.dots {
+    width: 10%;
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
+    height: 100%;
+    width: 80%;
+}
+
+.text-box.small {
+    display: flex;
+    align-items: center;
+}
+
+.text-box.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+<<<<<<< HEAD
+.text-box.submit {
+=======
+.button-arrow h1 {
+    font-size: 2vw;
+}
+
+@media screen and (min-width: 426px) {
+    .title.three h1::before {
+        content: 'Our products';
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title.three h1::before {
+        font-family: "MyFont", sans-serif;
+        content: 'Our products';
+        font-size: 9vw;
+    }
+}
+
+.section-three {
+    background-image: url('https://storage.googleapis.com/nutricode/part4.png');
+}
+
+.section-four {
+    background-image: url('https://storage.googleapis.com/nutricode/part5.png');
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+<<<<<<< HEAD
+    width: 100%;
+}
+
+.small-gap {
+    height: 2%;
+=======
+    width: 50%;
+}
+
+.pic-four-wrapper {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic-four {
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 425px) {
+    .pic-four {
+        height: 70%;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .title.four h1::before {
+        content: 'Expert Approval';
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title.four h1::before {
+        font-family: "MyFont", sans-serif;
+        content: 'Expert Approval';
+        font-size: 9vw;
+    }
+}
+
+.pic-four {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    background-position-x: 57%;
+    background-position-y: 40%;
+    z-index: 1;
+}
+
+.pic-four.krem {
+    background-image: url('https://storage.googleapis.com/nutricode/krem.jpg');
+}
+
+.pic-four.serene {
+    background-image: url('https://storage.googleapis.com/nutricode/serene.jpg');
+}
+
+.pic-four.jasmine {
+    background-image: url('https://storage.googleapis.com/nutricode/jasmine.jpg');
+}
+
+.pic-four.romain {
+    background-image: url('https://storage.googleapis.com/nutricode/romain.jpeg');
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    width: 100%;
+}
+
+.name h1 {
+    font-size: 2.5vw;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 425px) {
+    .name h1 {
+        font-size: 6vw;
+        margin: 0px;
+    }
+}
+
+.job-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job {
+    width: 100%;
+}
+
+.job h1 {
+    font-size: 1.5vw;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 425px) {
+    .job h1 {
+        font-size: 4vw;
+        margin-top: 3%;
+    }
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education {
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    .education p {
+        font-size: 3vw;
+        margin-top: 3%;
+    }
+}
+
+.section-five {
+    background-image: url('https://storage.googleapis.com/nutricode/part6.png');
+}
+
+.title-five {
+    height: 25vh;
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
+    width: 100%;
+}
+
+#email-input {
+    width: 75vw;
+    height: 6vh;
+    color: black;
+    font-family: 'font-rg';
+    font-size: 4.5vw;
+    opacity: 1;
+}
+
+#submit-button {
+    width: 77vw;
+    height: 7vh;
+    background-color: black;
+    font-family: 'font-bold';
+    color: white;
+    font-size: 4.5vw;
+}
+
+.small-text {
+    height: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'font-rg';
+}
+
+.email {
+    height: 7%;
+    width: 100%;
+}
+
+.submit {
+    height: 7%;
+    width: 100%;
+}
+
+.bold {
+    font-family: 'font-bold';
+    font-size: 9vw;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.thin {
+    font-family: 'font-rg';
+    font-size: 9vw;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+<<<<<<< HEAD
+}
+=======
+    justify-content: center;
+}
+>>>>>>> f906206f0008a2bcdd08e901f4e35336add7672c
