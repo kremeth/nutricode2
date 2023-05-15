@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
@@ -18,7 +17,6 @@
 
 <body>
     <section class="landing">
-        <!-- <div class="gap"></div> -->
         <div class="image"></div>
         <div class="small-gap"></div>
         <div class="big-text">
@@ -38,22 +36,40 @@
         <div class="small-gap"></div>
         <div class="email">
             <div class="text-box email">
-                <form>
-                    <input id="email-input" type="text" placeholder=" EMAIL">
+                <form id="email-form">
+                    <input id="email-input" type="email" name="email" placeholder=" EMAIL" required>
+                    <button type="submit" id="submit-button">
+                        GET EARLY ACCESS
+                    </button>
                 </form>
-            </div>
-
-        </div>
-        <div class="small-gap"></div>
-        <div class="submit">
-            <div class="text-box submit">
-                <button id="submit-button">
-                    GET EARLY ACCESS
-                </button>
             </div>
         </div>
         <div class="big-gap"></div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#email-form').submit(function (event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://script.google.com/macros/s/AKfycbwF9-_-zexntaZwTAFil1PRYOo-PQ3Wdo7jUDo8PbzYRGhelONJsE7r2ZiDkQx55mUEAA/exec',
+                    data: formData,
+                    beforeSend: function () {
+                        $('#submit-button').text('LOADING...');
+                    },
+                    success: function () {
+                        $('#submit-button').text('GET EARLY ACCESS');
+                        $('.text-box.email').addClass('thank-you').text('THANK YOU!');
+                        $('.small-text, .big-text, .small-gap').remove();
+
+                    }
+                });
+                $('.email').addClass('submitted');
+            });
+        });
+    </script>
 </body>
 
 </html>
