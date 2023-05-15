@@ -23,7 +23,7 @@ section {
 }
 
 .image {
-    height: 45%;
+    height: 40%;
     width: 100%;
     background-image: url('../img.jpg');
     background-size: cover;
