@@ -8,6 +8,10 @@
     src: url("../font/OpenSauceOne-SemiBold.ttf");
 }
 
+body {
+    margin: 0;
+}
+
 section {
     height: 100vh;
     width: 100vw;
