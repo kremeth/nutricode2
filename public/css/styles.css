@@ -80,13 +80,15 @@ button {
 }
 
 #email-input {
-    width: calc(100% - 4px);
+    width: calc(100% - 2px);
     height: 6vh;
     color: black;
     font-family: 'font-rg';
     font-size: 4.5vw;
     opacity: 1;
     padding: 0;
+    border-radius: 0;
+    border-width: 1px;
 }
 
 #submit-button {
@@ -97,7 +99,8 @@ button {
     color: white;
     font-size: 4.5vw;
     padding: 0;
-    border: 2px;
+    /* border-radius: 3px; */
+    border: 0;
 }
 
 .small-text {
