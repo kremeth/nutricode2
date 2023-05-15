@@ -40,7 +40,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
 }
 
 .text-box {
@@ -117,7 +117,7 @@ button {
     align-items: center;
     justify-content: center;
     font-family: 'font-rg';
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 .email {
