@@ -1,3 +1,67 @@
+function setupSlider(section) {
+    const wrapper = section.querySelector('.section-wrapper');
+    const slider = wrapper.querySelector('.slider');
+    const slides = slider.querySelector('.slides');
+    const prevBtn = wrapper.querySelector('.prev');
+    const nextBtn = wrapper.querySelector('.next');
+    const dots = slider.querySelector('.dots');
+    const dotArray = dots.querySelectorAll('.dot');
+    const isTouchDevice = 'ontouchstart' in document.documentElement;
+    let slideIndex = 0;
+
+    function showSlide(n) {
+        slideIndex = (n + slides.children.length) % slides.children.length;
+        slides.style.transform = `translateX(${-100 * slideIndex}%)`;
+        setActiveDot();
+    }
+
+    function prevSlide() {
+        showSlide(slideIndex - 1);
+    }
+
+    function nextSlide() {
+        showSlide(slideIndex + 1);
+    }
+
+    function setActiveDot() {
+        dotArray.forEach((dot, i) => {
+            dot.classList.toggle('active', i === slideIndex);
+        });
+    }
+
+    function dotClickHandler(e) {
+        const dotIndex = Array.from(dotArray).indexOf(e.target);
+        showSlide(dotIndex);
+    }
+
+    dotArray.forEach((dot) => {
+        dot.addEventListener('click', dotClickHandler);
+    });
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    if (isTouchDevice) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        slider.addEventListener('touchstart', (event) => {
+            touchStartX = event.changedTouches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', (event) => {
+            touchEndX = event.changedTouches[0].clientX;
+            if (touchEndX < touchStartX) {
+                nextSlide();
+            } else if (touchEndX > touchStartX) {
+                prevSlide();
+            }
+        });
+    }
+
+    setActiveDot();
+}
+
 function onSubmitButtonClicked() {
     const emailInput = document.querySelector('#email-input');
     const email = emailInput.value;
@@ -38,4 +102,24 @@ function onSubmitButtonClicked() {
         innerHtmlThanks.classList.remove('fade-in');
     }, 100);
 }
+
+
+
+window.addEventListener('load', () => {
+    const sectionTwo = document.querySelector('.section-two');
+    setupSlider(sectionTwo);
+
+    const sectionThree = document.querySelector('.section-three');
+    setupSlider(sectionThree);
+
+    const submitButton = document.querySelector('#submit-button');
+    submitButton.addEventListener('click', onSubmitButtonClicked);
+
+    const button = document.getElementsByClassName("button-one")[0];
+    const section = document.getElementsByClassName("section-five")[0];
+
+    button.addEventListener("click", () => {
+        section.scrollIntoView({ behavior: "smooth" });
+    });
+});
 
