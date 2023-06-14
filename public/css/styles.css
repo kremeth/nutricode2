@@ -979,3 +979,30 @@ button {
         display: none !important;
     }
 }
+
+@keyframes shiny {
+    0% {
+        transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(150%, 150%);
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    /* set the background color with some opacity */
+    padding: 10px 0px;
+    z-index: 1;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    /* apply a blur filter to the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
