@@ -856,8 +856,8 @@ button {
     position: relative;
     max-width: 400px;
     margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
+    padding-bottom: 10%;
 }
 
 .close-btn {
@@ -975,6 +975,7 @@ button {
     width: 80%;
     height: 85%;
     max-width: 400px;
+    padding-bottom: 10%;
 }
 
 .popup-section {
