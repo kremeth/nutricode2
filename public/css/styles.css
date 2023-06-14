@@ -200,6 +200,16 @@ section.final {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .right-content.pp {
+        width: 90%;
+        aspect-ratio: 1/1;
+        background-image: url('../img.jpg');
+        background-size: 140%;
+        background-position: 60% 70%;
+    }
+}
+
 .step-card-page {
     width: 33%;
     height: 100%;
