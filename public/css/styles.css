@@ -75,11 +75,11 @@ section.final {
     }
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .content-wrapper.one {
         margin-top: -20%;
     }
-}
+} */
 
 .content {
     width: 80%;
@@ -739,6 +739,14 @@ button {
 }
 
 @media (max-width: 425px) {
+    .left-wrapper.end.pp {
+        order: 2;
+        height: 40%;
+        margin-top: -40%;
+    }
+}
+
+@media (max-width: 425px) {
     .right-wrapper.end {
         order: 1;
         height: 50%;
@@ -761,6 +769,12 @@ button {
 @media (max-width: 425px) {
     .content.final {
         height: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .content.final.pp {
+        height: 100%;
     }
 }
 
