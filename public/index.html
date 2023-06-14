@@ -83,7 +83,7 @@
     <script>
         // Function to scroll to the last form when the button is clicked
         function scrollToForm() {
-            var form = document.getElementById("email-form");
+            var form = document.getElementById("email-form2");
             form.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
@@ -104,43 +104,56 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRB3F85" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div id="myPopup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
             <section class="popup-section">
-                <!-- <div class="header-wrapper"></div> -->
-                <div class="image-wrapper-popup">
-                    <div class="image-popup"></div>
-                </div>
-                <div class="small-gap"></div>
-                <div class="big-text">
-                    <div class="text-box">
-                        <div class="thin-popup">GET YOUR</div>
-                        <div class="bold-popup">FREE MONTH</div>
-                    </div>
-                </div>
-                <!-- <div class="small-gap"></div> -->
-                <div class="small-text">
-                    <div class="text-box small">
-                        <div class="perso-popup">OF <span style="font-family: font-bbold;">PERSONALISED
-                                SUPPLEMENTS</span>
+                <div class="content-wrapper">
+                    <div class="content final">
+                        <div class="left-wrapper end">
+                            <div class="left-content submit pp">
+                                <div class="title-submit-wrapper pp">
+                                    <div class="title-submit">
+                                        <div class="title-thin submit">GET YOUR</div>
+                                        <div class="title-bold submit">FREE MONTH</div>
+                                    </div>
+                                </div>
+                                <div class="description-submit-wrapper">
+                                    <div class="description-submit">
+                                        <div class="title-thin description">OF&nbsp;<span
+                                                style="color: #2196F3; font-family: font-bbold;">PERSONALISED</span>
+                                        </div>
+                                        <div class="title-thin description"><span
+                                                style="color: #2196F3; font-family: font-bbold;">SUPPLEMENTS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <div class="text-box email">
+                                        <form id="email-form">
+                                            <input id="email-input" type="email" name="email" placeholder=" EMAIL"
+                                                required>
+                                            <button type="submit" id="submit-button">
+                                                SUBMIT
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrapper end">
+                            <div class="right-content">
+                                <div class="title-image"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="email">
-                    <div class="text-box email">
-                        <form id="email-form">
-                            <input id="email-input" type="email" name="email" placeholder=" EMAIL" required>
-                            <button type="submit" id="submit-button">
-                                SUBMIT
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="big-gap"></div>
             </section>
         </div>
     </div>
+
+
     <header>
         <div class="button-one">
             <button id="one-button" onclick="scrollToForm()">
@@ -149,265 +162,227 @@
         </div>
     </header>
 
-    <section class="first-page">
-        <div class="header-wrapper"></div>
-        <div class="first-image-wrapper"></div>
-        <div class="gap-first"></div>
-
-        <div class="first-wrapper">
-            <div class="first-text-wrapper">
-                <div class="first-text">
-                    <div class="thin-one">OPTIMIZE</div>
-                    <div class="thin-one">YOUR</div>
-                    <div class="bold-one">HEALTH</div>
-                </div>
-            </div>
-            <div class="first-plus-wrapper">
-                <div class="first-plus">
-                    <div class="plus-large">++</div>
-                </div>
-            </div>
-        </div>
-        <div class="first-bottom-wrapper"></div>
-    </section>
-
-
-
-    <section class="section-two">
-        <div class="section-wrapper two">
-            <div class="button-arrow prev">
-                <h1>
-                    < </h1>
-            </div>
-            <div class="slider">
-                <!-- <div class="gap-two"></div> -->
-                <div class="slides">
-                    <div class="slide">
-                        <div class="step">
-                            <div class="step-text">STEP&nbsp;<span style="font-family: font-bbold;">ONE</span></div>
-                        </div>
-                        <div class="image-slide-one"></div>
-                        <div class="title-two">
-                            <div class="slide-title-wrapper">
-                                <div class="slide-title">
-                                    <div class="bold-two">AT<span style="color: #2196F3;">-</span>HOME</div>
-                                    <div class="thin-two">BLOOD</div>
-                                    <div class="thin-two">TEST</div>
-                                </div>
-                            </div>
-                            <div class="slide-subtitle-wrapper">
-                                <div class="slide-subtitle">
-                                    <div class="thin-two-sub">DISCOVER YOUR BODY'S</div>
-                                    <div class="thin-two-sub">NUTRIENT GAPS</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-two"></div>
-                    </div>
-
-                </div>
-                <div class="button-arrow next">
-                    <h1>
-                        >
-                    </h1>
-                </div>
-            </div>
-    </section>
-    <section class="section-two">
-        <div class="section-wrapper two">
-            <div class="button-arrow prev">
-                <h1>
-                    < </h1>
-            </div>
-            <div class="slider">
-                <!-- <div class="gap-two"></div> -->
-                <div class="slides">
-                    <div class="slide">
-                        <div class="step">
-                            <div class="step-text">STEP&nbsp;<span style="font-family: font-bbold;">TWO</span></div>
-                        </div>
-                        <div class="image-slide-two"></div>
-                        <div class="title-two">
-                            <div class="slide-title-wrapper">
-                                <div class="slide-title">
-                                    <div class="bold-two">TAILORED</div>
-                                    <div class="thin-two">SUPPLEMENT</div>
-                                    <div class="thin-two">PACKS</div>
-                                </div>
-                            </div>
-                            <div class="slide-subtitle-wrapper">
-                                <div class="slide-subtitle">
-                                    <div class="thin-two-sub">DAILY SOLUTION FOR</div>
-                                    <div class="thin-two-sub">OPTIMAL HEALTH</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-two"></div>
-                    </div>
-
-                </div>
-                <div class="button-arrow next">
-                    <h1>
-                        >
-                    </h1>
-                </div>
-            </div>
-    </section>
-    <section class="section-two">
-        <div class="section-wrapper two">
-            <div class="button-arrow prev">
-                <h1>
-                    < </h1>
-            </div>
-            <div class="slider">
-                <!-- <div class="gap-two"></div> -->
-                <div class="slides">
-                    <div class="slide">
-                        <div class="step">
-                            <div class="step-text">STEP&nbsp;<span style="font-family: font-bbold;">THREE</span></div>
-                        </div>
-                        <div class="image-slide-three"></div>
-                        <div class="title-two">
-                            <div class="slide-title-wrapper">
-                                <div class="slide-title">
-                                    <div class="bold-two">FEEL</div>
-                                    <div class="thin-two">HEALTHY</div>
-                                    <div class="thin-two">& ALIVE</div>
-                                </div>
-                            </div>
-                            <div class="slide-subtitle-wrapper">
-                                <div class="slide-subtitle">
-                                    <div class="thin-two-sub"><span style="color: #2196F3;">++</span>ENERGY, SLEEP</div>
-                                    <div class="thin-two-sub">& DIGESTION</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-two"></div>
-                    </div>
-                </div>
-                <!-- <div class="dots-wrapper">
-                    <div class="dots">
-                        <div class="dot-wrapper">
-                            <span class="dot"></span>
-                        </div>
-                        <div class="dot-wrapper">
-                            <span class="dot"></span>
-                        </div>
-                        <div class="dot-wrapper">
-                            <span class="dot"></span>
+    <section>
+        <div class="content-wrapper one">
+            <div class="content">
+                <div class="left-wrapper">
+                    <div class="left-content">
+                        <div class="title-text-wrapper">
+                            <div class="title-thin">SAME LIFE,</div>
+                            <div class="title-bold">JUST BE<span style="color: #2196F3;">++</span>ER</div>
                         </div>
                     </div>
-                </div> -->
-
-            </div>
-            <div class="button-arrow next">
-                <h1>
-                    >
-                </h1>
+                </div>
+                <div class="right-wrapper">
+                    <div class="right-content">
+                        <div class="title-image"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section-three">
-        <!-- <div class="header-wrapper"></div> -->
-        <div class="title-three-wrapper">
-            <div class="title-three">
-                <div class="step-text">THE&nbsp;<span style="font-family: font-bbold; color: #2196F3;">BRAINS</span>
+    <section class="steps-section">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="step-card-page">
+                    <div class="step-card-wrapper">
+                        <div class="step-card">
+                            <div class="step-count">
+                                <div class="step-text">STEP&nbsp;<span
+                                        style="font-family: font-bbold; color: #2196F3;">ONE</span></div>
+                            </div>
+                            <div class="step-img one"></div>
+                            <div class="step-title-wrapper">
+                                <div class="step-title">
+                                    <div class="step-title-text">AT-HOME</div>
+                                    <div class="step-title-text">BLOOD TEST</div>
+                                </div>
+                            </div>
+                            <div class="step-description-wrapper">
+                                <div class="step-description">
+                                    <div class="step-description-text">DISCOVER YOUR</div>
+                                    <div class="step-description-text">NUTRIENT GAPS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card-page">
+                    <div class="step-card-wrapper">
+                        <div class="step-card">
+                            <div class="step-count">
+                                <div class="step-text">STEP&nbsp;<span
+                                        style="font-family: font-bbold; color: #2196F3;">TWO</span></div>
+                            </div>
+                            <div class="step-img two"></div>
+                            <div class="step-title-wrapper two">
+                                <div class="step-title">
+                                    <div class="step-title-text">TAILORED PACKS</div>
+                                    <div class="step-title-text">OF SUPPLEMENTS</div>
+                                </div>
+                            </div>
+                            <div class="step-description-wrapper two">
+                                <div class="step-description">
+                                    <div class="step-description-text">DAILY SOLUTION FOR</div>
+                                    <div class="step-description-text">OPTIMAL HEALTH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card-page">
+                    <div class="step-card-wrapper">
+                        <div class="step-card">
+                            <div class="step-count">
+                                <div class="step-text">STEP&nbsp;<span
+                                        style="font-family: font-bbold; color: #2196F3;">THREE</span></div>
+                            </div>
+                            <div class="step-img three"></div>
+                            <div class="step-title-wrapper two">
+                                <div class="step-title">
+                                    <div class="step-title-text">FEEL HEALTHY</div>
+                                    <div class="step-title-text">& ALIVE</div>
+                                </div>
+                            </div>
+                            <div class="step-description-wrapper two">
+                                <div class="step-description">
+                                    <div class="step-description-text"><span
+                                            style="font-family: font-bbold; color: #2196F3;">++</span>ENERGY, SLEEP
+                                    </div>
+                                    <div class="step-description-text">& DIGESTION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="core-three-wrapper">
-            <div class="core-three">
-                <div class="row">
-                    <div class="card">
-                        <div class="card-pic-wrapper">
-                            <div class="card-pic-one"></div>
+    </section>
+    <section class="cards-section">
+        <div class="content-wrapper cards">
+            <div class="content">
+                <div class="team-title">THE&nbsp;<span style="color: #2196F3;">BRAINS</span></div>
+                <div class="team-cards">
+                    <div class="cards-pair">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-img krem"></div>
+                                <div class="card-name">
+                                    <div class="card-name-text">MATHIEU</div>
+                                </div>
+                                <div class="card-job">
+                                    <div class="card-job-wrapper">
+                                        <div class="card-job-text">DATA</div>
+                                        <div class="card-job-text">COLLECTION</div>
+                                    </div>
+                                </div>
+                                <div class="card-degree">
+                                    <div class="card-degree-text">MSC DATA SCIENCE</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-text-wrapper">
-                            <div class="card-text">
-                                <div class="bold-three">MATHIEU</div>
-                                <div class="thin-three">DATA</div>
-                                <div class="thin-three">COLLECTION</div>
-                                <div class="three-sub">MSC DATA SCIENCE</div>
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-img serene"></div>
+                                <div class="card-name">
+                                    <div class="card-name-text">SERENE</div>
+                                </div>
+                                <div class="card-job">
+                                    <div class="card-job">
+                                        <div class="card-job-wrapper">
+                                            <div class="card-job-text">DATA</div>
+                                            <div class="card-job-text">ANALYSIS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-degree">
+                                    <div class="card-degree-text">MSC BIOLOGY</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-pic-wrapper">
-                            <div class="card-pic-two"></div>
-                        </div>
-                        <div class="card-text-wrapper">
-                            <div class="card-text">
-                                <div class="bold-three">SERENE</div>
-                                <div class="thin-three">DATA</div>
-                                <div class="thin-three">ANALYSIS</div>
-                                <div class="three-sub">MSC BIOINFORMATICS</div>
+                    <div class="cards-pair">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-img jasmine"></div>
+                                <div class="card-name two">
+                                    <div class="card-name-text">JASMINE</div>
+                                </div>
+                                <div class="card-job two">
+                                    <div class="card-job">
+                                        <div class="card-job-wrapper">
+                                            <div class="card-job-text">DIETICIAN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-degree">
+                                    <div class="card-degree-text">MSC NUTRITION</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card">
-                        <div class="card-pic-wrapper">
-                            <div class="card-pic-three"></div>
-                        </div>
-                        <div class="card-text-wrapper">
-                            <div class="card-text">
-                                <div class="bold-three">JASMINE</div>
-                                <div class="thin-three">DIETICIAN</div>
-                                <div class="three-sub">MSC NUTRITION</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-pic-wrapper">
-                            <div class="card-pic-four"></div>
-                        </div>
-                        <div class="card-text-wrapper">
-                            <div class="card-text">
-                                <div class="bold-three">ROMAIN</div>
-                                <div class="thin-three">ALGODEV</div>
-                                <div class="three-sub">MSC DATA SCIENCE</div>
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card-img romain"></div>
+                                <div class="card-name two">
+                                    <div class="card-name-text">ROMAIN</div>
+                                </div>
+                                <div class="card-job two">
+                                    <div class="card-job">
+                                        <div class="card-job-wrapper">
+                                            <div class="card-job-text">ALGODEV</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-degree">
+                                    <div class="card-degree-text">MSC DATA SCIENCE</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-
-
-
-
-    <section class="landing">
-        <!-- <div class="header-wrapper"></div> -->
-        <div class="image"></div>
-        <div class="small-gap"></div>
-        <div class="big-text">
-            <div class="text-box">
-                <div class="thin">GET YOUR</div>
-                <div class="bold">FREE MONTH</div>
+    <section class="final">
+        <div class="content-wrapper">
+            <div class="content final">
+                <div class="left-wrapper end">
+                    <div class="left-content submit">
+                        <div class="title-submit-wrapper">
+                            <div class="title-submit">
+                                <div class="title-thin submit">GET YOUR</div>
+                                <div class="title-bold submit">FREE MONTH</div>
+                            </div>
+                        </div>
+                        <div class="description-submit-wrapper">
+                            <div class="description-submit">
+                                <div class="title-thin description">OF&nbsp;<span
+                                        style="color: #2196F3; font-family: font-bbold;">PERSONALISED</span></div>
+                                <div class="title-thin description"><span
+                                        style="color: #2196F3; font-family: font-bbold;">SUPPLEMENTS</span></div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="text-box email">
+                                <form id="email-form2">
+                                    <input id="email-input" type="email" name="email" placeholder=" EMAIL" required>
+                                    <button type="submit" id="submit-button">
+                                        SUBMIT
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-wrapper end">
+                    <div class="right-content">
+                        <div class="title-image"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <div class="small-gap"></div> -->
-        <div class="small-text">
-            <div class="text-box small">
-                <div class="perso">OF <span style="font-family: font-bbold;">PERSONALISED SUPPLEMENTS</span></div>
-            </div>
-        </div>
-        <div class="email">
-            <div class="text-box email">
-                <form id="email-form">
-                    <input id="email-input" type="email" name="email" placeholder=" EMAIL" required>
-                    <button type="submit" id="submit-button">
-                        SUBMIT
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="big-gap"></div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -433,6 +408,32 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $('#email-form2').submit(function (event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://script.google.com/macros/s/AKfycbwF9-_-zexntaZwTAFil1PRYOo-PQ3Wdo7jUDo8PbzYRGhelONJsE7r2ZiDkQx55mUEAA/exec',
+                    data: formData,
+                    beforeSend: function () {
+                        $('#submit-button').text('LOADING...');
+                    },
+                    success: function () {
+                        $('#submit-button').text('GET EARLY ACCESS');
+                        $('.text-box.email').addClass('thank-you').text('THANK YOU!');
+                        $('.small-text, .big-text, .small-gap').remove();
+
+                    }
+                });
+                $('.email').addClass('submitted');
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>
